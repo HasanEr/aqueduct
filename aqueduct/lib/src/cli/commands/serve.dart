@@ -15,7 +15,7 @@ class CLIServer extends CLICommand with CLIProject {
 
   @Option("timeout",
       help: "Number of seconds to wait to ensure startup succeeded.",
-      defaultsTo: "45")
+      defaultsTo: "4500")
   int get startupTimeout => decode("timeout");
 
   @Option("ssl-key-path",
